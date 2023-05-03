@@ -20,7 +20,10 @@ worksheet["A1"] = "Location"
 
 #read every row in excell file
 for i in range(len(name_column)):
+    
+    #read current value
     row_value = name_column.iloc[i]
+    
     worksheetrow = 'A'+str(i+2)
     try:
         if link_pattern.match(row_value):
